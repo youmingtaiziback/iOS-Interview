@@ -15,17 +15,11 @@
 
 初始化的顺序
 
-```
-被引用的framework
-
-+ load方法
-
-\_\_attribute\_\_\(constructor\)
-
-引用你的framework
-
-+ initializer方法
-```
+* 被引用的framework
+* + load方法
+* \_\_attribute\_\_\(constructor\)
+* 引用你的framework
+* + initializer方法
 
 
 
