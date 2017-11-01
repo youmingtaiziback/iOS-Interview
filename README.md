@@ -11,7 +11,7 @@
 
   * 调用顺序：父类 &gt; 子类 &gt; 分类
 
-  * 每个类只调用一次，如果类和分类都实现了+initialize方法，分类的实现被调用
+  * 每个类只调用一次，如果类和分类都实现了`+ initialize`方法，分类的实现被调用
 
 初始化的顺序
 
@@ -21,6 +21,7 @@
 * \_\_attribute\_\_\(constructor\)
 
 * 引用你的framework
+
 * `+ initializer`
 
 
