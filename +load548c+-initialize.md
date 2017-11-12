@@ -1,4 +1,4 @@
-# +load和+Initialize
+# +load和+initializer
 
 * `+ load`
 
