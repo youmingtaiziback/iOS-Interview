@@ -1,6 +1,6 @@
 # +load和+Initialize
 
-`+ load`
+* `+ load`
 
 * * 当类和分类被添加到运行时时调用
   * 调用顺序：父类 &gt; 子类 &gt; 分类
