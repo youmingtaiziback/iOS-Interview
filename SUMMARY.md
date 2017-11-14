@@ -10,4 +10,5 @@
 * [Block](block.md)
 * [+load和+initializer](+load548c+-initialize.md)
 * [HTTP和HTTPS](httphe-https.md)
+* [@synchronize原理](synchronizeyuan-li.md)
 
