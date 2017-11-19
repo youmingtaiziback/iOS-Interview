@@ -64,6 +64,14 @@ ImageLoader把image加载到内存，每一个image对应一个ImageLoader。每
   * 保证每一个selector唯一
 * initializers
   * 之前三个步骤都是在修改\_\_DATA段，从这里开始修改堆栈
+  * Objective-C的+load\(\)
+  * C++的构造函数属性函数 形如attribute\(\(constructor\)\)
+  * 非基本类型的C++静态全局变量的创建
+  * ![](/assets/import.png)
+    * dyld开始初始化程序的二进制文件
+    * ImageLoader读取image
+    * runtime 向 dyld 绑定了回调，image 加载到内存后，dyld 会通知 runtime 进行处理
+    * runtime 接手后调用 mapimages 做解析和处理，接下来 loadimages 中调用 callloadmethods 方法，遍历所有加载进来的 Class，按继承层级依次调用 Class 的 +load 方法和其 Category 的 +load 方法
 
 
 
