@@ -75,7 +75,27 @@ ImageLoader把image加载到内存，每一个image对应一个ImageLoader。每
 
 ### main\(\)之前的加载时间如何衡量
 
+edit sheme =&gt; DYLD\_PRINT\_STATISTICS，运行时会得到下面的截图
 
+```
+Total pre-main time: 542.20 milliseconds (100.0%)
+         dylib loading time:  79.58 milliseconds (14.6%)
+        rebase/binding time: 399.18 milliseconds (73.6%)
+            ObjC setup time:  32.12 milliseconds (5.9%)
+           initializer time:  31.25 milliseconds (5.7%)
+           slowest intializers :
+               libSystem.dylib :   7.58 milliseconds (1.3%)
+```
+
+#### main\(\)函数之前的优化点
+
+* 减少不必要的framework
+* 合理设置framework的optional和required
+* 合并或者删减一些OC类，工具AppCode
+* 删减一些无用的静态变量
+* 删减没有被调用到或者已经废弃的方法
+* 将不必须在+load方法中做的事情延迟到+initialize中
+* 尽量不要用C++虚函数\(创建虚函数表有开销\)
 
 
 
