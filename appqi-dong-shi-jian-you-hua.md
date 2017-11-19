@@ -20,5 +20,20 @@ App以Image为单位进行加载
 * dylib、framework
 * bundle 资源文件，只能用dlopen加载，不推荐使用
 
+#### 系统使用动态链接有几点好处
+
+* 代码共用
+* 易于维护
+* 减少可执行文件体积
+
+#### 什么是ImageLoader
+
+ImageLoader把image加载到内存，每一个image对应一个ImageLoader。每一个image包括编译后的符号和代码
+
+加载顺序：将动态链接的image递归加载；从可执行文件image递归加载所有符号
+
+  
+
+
 
 
