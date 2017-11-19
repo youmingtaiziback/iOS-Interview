@@ -56,6 +56,7 @@ ImageLoader把image加载到内存，每一个image对应一个ImageLoader。每
   * 可优化的点
     * 关键在于减少\_\_DATA段指针的数量
     * 减少Objective-C类和selector
+    * 减少C++虚函数
 * Objc setup
 * initializers
 
