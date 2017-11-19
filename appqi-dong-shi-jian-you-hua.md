@@ -49,10 +49,11 @@ ImageLoader把image加载到内存，每一个image对应一个ImageLoader。每
     * 减少非系统库的依赖
     * 合并非系统库
     * 使用静态资源，比如把代码加入主程序
-* Rebase image
-* Bind image
+* Rebase image/Bind image
 * Objc setup
 * initializers
+
+
 
 
 
