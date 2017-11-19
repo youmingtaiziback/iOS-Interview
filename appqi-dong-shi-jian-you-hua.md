@@ -54,6 +54,7 @@ ImageLoader把image加载到内存，每一个image对应一个ImageLoader。每
     * rebase修复image内部资源指针，要把镜像读入内存，瓶颈在IO
     * bind修复外部资源指针，需要查询符号表来指向跨镜像资源，瓶颈在CPU计算
   * 可优化的点
+    * 关键在于减少\_\_DATA段指针的数量
 * Objc setup
 * initializers
 
