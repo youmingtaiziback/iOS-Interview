@@ -73,5 +73,9 @@ ImageLoader把image加载到内存，每一个image对应一个ImageLoader。每
     * runtime 向 dyld 绑定了回调，image 加载到内存后，dyld 会通知 runtime 进行处理
     * runtime 接手后调用 mapimages 做解析和处理，接下来 loadimages 中调用 callloadmethods 方法，遍历所有加载进来的 Class，按继承层级依次调用 Class 的 +load 方法和其 Category 的 +load 方法
 
+### main\(\)之前的加载时间如何衡量
+
+
+
 
 
