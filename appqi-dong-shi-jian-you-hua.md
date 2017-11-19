@@ -35,5 +35,24 @@ ImageLoader把image加载到内存，每一个image对应一个ImageLoader。每
 * 将动态链接的image递归加载
 * 从可执行文件image递归加载所有符号
 
+#### 动态链接库加载的具体流程
+
+* load dylibs image
+  * 步骤
+    * 分析所依赖的动态库
+    * 找到动态库的mach-o文件
+    * 打开文件
+    * 验证文件
+    * 在系统核心注册文件签名
+    * 对动态库的每一个segment调用mmap\(\)
+  * 可优化的点
+    * 减少非系统库的依赖
+    * 合并非系统库
+    * 使用静态资源，比如把代码加入主程序
+* Rebase image
+* Bind image
+* Objc setup
+* initializers
+
 
 
