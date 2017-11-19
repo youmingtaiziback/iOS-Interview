@@ -8,5 +8,9 @@ t\(App总启动时间\) = t1\(main\(\)之前的加载时间\) + t2\(main\(\)之�
 
 * t2 = main方法执行之后到AppDelegate类中的- \(BOOL\)Application:\(UIApplication \*\)Application didFinishLaunchingWithOptions:\(NSDictionary \*\)launchOptions方法执行结束前这段时间
 
+## main\(\)调用之前的加载过程
+
+
+
 
 
