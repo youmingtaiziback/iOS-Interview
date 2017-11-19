@@ -101,5 +101,18 @@ Total pre-main time: 542.20 milliseconds (100.0%)
 
 main\(\)被调用后，在`- (BOOL)Application:(UIApplication *)Application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions`中创建首页需要展示的view，在当前runloop的末尾调用`CA::Transaction::commit`完成渲染
 
+渲染的步骤
+
+* 准备阶段 这里主要是图片的解码
+* 布局阶段 首页所有UIView的- \(void\)layoutSubViews\(\)运行
+* 绘制阶段 首页所有UIView的- \(void\)drawRect:\(CGRect\)rect运行
+
+#### main\(\)被调用后可优化的点
+
+* 不使用xib
+* NSUserDefaults实际上是在Library文件夹下会生产一个plist文件，如果太大需要拆分
+* 每次用NSLog方式打印会隐式的创建一个Calendar，因此需要删减启动时各业务方打的log，或者仅仅针对内测版输出log
+* 梳理应用启动时发送的所有网络请求，是否可以统一在异步线程请求
+
 
 
