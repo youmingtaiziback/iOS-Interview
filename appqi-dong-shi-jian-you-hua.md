@@ -59,6 +59,9 @@ ImageLoader把image加载到内存，每一个image对应一个ImageLoader。每
     * 减少C++虚函数
     * 使用swift stuct
 * Objc setup
+  * 注册Objective-C类
+  * 把category的定义插入方法列表
+  * 保证每一个selector唯一
 * initializers
 
 
