@@ -12,3 +12,5 @@ t\(App总启动时间\) = t1\(main\(\)之前的加载时间\) + t2\(main\(\)之�
 
 App启动后的操作：加载可执行文件、加载dyld、dyld加载可执行文件依赖的动态链接库（包括系统的framework、加载Objective-C runtime的libobjc、libSystem）
 
+App以Image为单位进行加载
+
