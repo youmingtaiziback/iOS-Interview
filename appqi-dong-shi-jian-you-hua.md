@@ -18,10 +18,7 @@ App以Image为单位进行加载
 
 * executable
 * dylib、framework
-* bundle 资源文件，只能用dlopen加载
-
-  
-
+* bundle 资源文件，只能用dlopen加载，不推荐使用
 
 
 
