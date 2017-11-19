@@ -14,3 +14,14 @@ App启动后的操作：加载可执行文件、加载dyld、dyld加载可执行
 
 App以Image为单位进行加载
 
+#### 什么是image
+
+* executable
+* dylib、framework
+* bundle 资源文件，只能用dlopen加载
+
+  
+
+
+
+
