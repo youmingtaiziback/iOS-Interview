@@ -63,6 +63,7 @@ ImageLoader把image加载到内存，每一个image对应一个ImageLoader。每
   * 把category的定义插入方法列表
   * 保证每一个selector唯一
 * initializers
+  * 之前三个步骤都是在修改\_\_DATA段，从这里开始修改堆栈
 
 
 
