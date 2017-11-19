@@ -30,10 +30,10 @@ App以Image为单位进行加载
 
 ImageLoader把image加载到内存，每一个image对应一个ImageLoader。每一个image包括编译后的符号和代码
 
-加载顺序：将动态链接的image递归加载；从可执行文件image递归加载所有符号
+加载顺序
 
-  
-
+* 将动态链接的image递归加载
+* 从可执行文件image递归加载所有符号
 
 
 
