@@ -97,5 +97,9 @@ Total pre-main time: 542.20 milliseconds (100.0%)
 * 将不必须在+load方法中做的事情延迟到+initialize中
 * 尽量不要用C++虚函数\(创建虚函数表有开销\)
 
+## main\(\)调用之后的加载时间
+
+main\(\)被调用后，在`- (BOOL)Application:(UIApplication *)Application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions`中创建首页需要展示的view，在当前runloop的末尾调用`CA::Transaction::commit`完成渲染
+
 
 
