@@ -61,7 +61,7 @@ ImageLoader把image加载到内存，每一个image对应一个ImageLoader。每
     * 关键在于减少\_\_DATA段指针的数量
     * 减少Objective-C类和selector
     * 减少C++虚函数
-    * 使用swift stuct
+    * 使用swift structs
 * Objc setup
   * 注册Objective-C类
   * 把category的定义插入方法列表
