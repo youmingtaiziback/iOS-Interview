@@ -26,7 +26,7 @@
 
 ## 重构推出的NSURLSession解决了NSURLConnection哪些问题
 
-NSURLConnectoin只隐藏了单个网络请求的线程的相关操作，并没有提供接口来解决多个网络请求时多个线程的管理问题，譬如当有多个网络请求时是否应该使用线程池来避免不停创建与销毁线程（这个可以有NSOperationQueue很好的解决）
+NSURLConnection只隐藏了单个网络请求的线程的相关操作，并没有提供接口来解决多个网络请求时多个线程的管理问题，譬如当有多个网络请求时是否应该使用线程池来避免不停创建与销毁线程（这个可以有NSOperationQueue很好的解决）
 
 NSURLConnection不是基于HTTP/2协议的，若使用NSURLConnection发起请求则每次请求都需要经过三次握手过程
 
