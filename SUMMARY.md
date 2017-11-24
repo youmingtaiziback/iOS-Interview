@@ -15,5 +15,4 @@
 * [AFNetworking](afnetworking.md)
 * [五分钟读懂UML类图](wu-fen-zhong-du-dong-uml-lei-tu.md)
 * [HTTP 方法：GET 对比 POST](http-fangfa-ff1a-get-dui-bi-post.md)
-* [tmp](tmp.md)
 
