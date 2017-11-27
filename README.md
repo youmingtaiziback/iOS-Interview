@@ -10,7 +10,7 @@
 * [Block](block.md)
 * [+load和+initializer](+load548c+-initialize.md)
 * [HTTP和HTTPS](httphe-https.md)
-* [@synchronize原理](synchronizeyuan-li.md)
+* [锁](synchronizeyuan-li.md)
 * [App启动时间优化](appqi-dong-shi-jian-you-hua.md)
 * [AFNetworking](afnetworking.md)
 * [五分钟读懂UML类图](wu-fen-zhong-du-dong-uml-lei-tu.md)
