@@ -1,3 +1,9 @@
+# [深入理解 iOS 开发中的锁](https://bestswifter.com/ios-lock/)
+
+# 
+
+# 
+
 # @synchronize原理
 
 * 传入的对象是否被synchronize持有
