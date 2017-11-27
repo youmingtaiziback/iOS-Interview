@@ -28,7 +28,7 @@
 
 * `+ initializer`
 
-[Load 方法 暨 程序的加载顺序](#)
+[Load 方法 暨 程序的加载顺序](http://www.jianshu.com/p/8f14c7a33579)
 
 [你真的了解 load 方法么？](https://github.com/Draveness/analyze/blob/master/contents/objc/你真的了解 load 方法么？.md)
 
