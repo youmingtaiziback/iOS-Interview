@@ -93,13 +93,13 @@ Total pre-main time: 542.20 milliseconds (100.0%)
 
 #### main\(\)函数之前的优化点
 
-* 减少不必要的framework
-* 合理设置framework的optional和required
-* 合并或者删减一些OC类，工具AppCode
-* 删减一些无用的静态变量
-* 删减没有被调用到或者已经废弃的方法
-* 将不必须在+load方法中做的事情延迟到+initialize中
-* 尽量不要用C++虚函数\(创建虚函数表有开销\)
+* 库：减少不必要的framework
+* 库：合理设置framework的optional和required
+* 类：合并或者删减一些OC类，工具AppCode
+* 变量：删减一些无用的静态变量
+* 方法：删减没有被调用到或者已经废弃的方法
+* +load：将不必须在+load方法中做的事情延迟到+initialize中
+* C++：尽量不要用C++虚函数\(创建虚函数表有开销\)
 
 ## main\(\)调用之后的加载时间
 
@@ -119,9 +119,6 @@ main\(\)被调用后，在`- (BOOL)Application:(UIApplication *)Application didF
 * 梳理应用启动时发送的所有网络请求，是否可以统一在异步线程请求
 
 # [阿里数据iOS端启动速度优化的一些经验](http://www.jianshu.com/p/f29b59f4c2b9)
-
-  
-
 
 
 
