@@ -39,8 +39,6 @@ bool test_and_set (bool *target) {
 }
 ```
 
-
-
 #### 自旋锁的总结
 
 ```
@@ -94,53 +92,5 @@ pthread_mutex_unlock(&mutex); // 释放锁
 
 锁的类型有`PTHREAD_MUTEX_NORMAL`、`PTHREAD_MUTEX_ERRORCHECK`、`PTHREAD_MUTEX_RECURSIVE`
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+锁定的情况下再次申请锁会导致死锁，此时应该使用递归锁
 
