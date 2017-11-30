@@ -51,8 +51,6 @@ do {
 
 如果临界区执行时间过长，就不适合使用自旋锁了，因为此时忙等时间长，白白浪费CPU时间
 
-# [关于 @synchronized，这儿比你想知道的还要多](http://yulingtianxia.com/blog/2015/11/01/More-than-you-want-to-know-about-synchronized/)
-
 # 
 
 
