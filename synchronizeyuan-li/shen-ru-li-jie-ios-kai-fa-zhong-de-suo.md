@@ -53,47 +53,17 @@ do {
 
 ## 信号量
 
+信号量最重会调用`sem_wait`函数
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-啊
+```
+int sem_wait (sem_t *sem) {
+  int *futex = (int *) sem;
+  if (atomic_decrement_if_positive (futex) > 0)
+    return 0;
+  int err = lll_futex_wait (futex, 0);
+    return -1;
+)
+```
 
 
 
