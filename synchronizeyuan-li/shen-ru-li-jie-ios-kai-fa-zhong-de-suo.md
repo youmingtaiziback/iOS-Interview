@@ -94,3 +94,11 @@ pthread_mutex_unlock(&mutex); // 释放锁
 
 锁定的情况下再次申请锁会导致死锁，此时应该使用递归锁
 
+## NSLock
+
+`NSLock`只是内部封装了一个`pthread_mutex`，属性为`PTHREAD_MUTEX_ERRORCHECK`
+
+它比`pthread_mutex`是因为需要错误提示和方法调用
+
+
+
