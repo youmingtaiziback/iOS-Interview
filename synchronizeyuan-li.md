@@ -23,6 +23,10 @@ do {
 
 但是要确保申请锁的过程是原子操作
 
+#### 原子操作
+
+多处理器下原子操作由硬件提供支持
+
 # [关于 @synchronized，这儿比你想知道的还要多](http://yulingtianxia.com/blog/2015/11/01/More-than-you-want-to-know-about-synchronized/)
 
 # 
