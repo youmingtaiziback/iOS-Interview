@@ -27,7 +27,9 @@ do {
 
 多处理器下原子操作由硬件提供支持
 
+```
 原子操作的伪代码可以表示为
+```
 
 ```
 bool test_and_set (bool *target) {
@@ -36,6 +38,8 @@ bool test_and_set (bool *target) {
     return rv;
 }
 ```
+
+
 
 #### 自旋锁的总结
 
@@ -64,6 +68,79 @@ int sem_wait (sem_t *sem) {
     return -1;
 )
 ```
+
+需要等待时调用`lll_futex_wait`，其内部调用到`SYS_futex`，使线程休眠让出时间片，该函数在互斥锁中也有可能被用到
+
+主动让出时间片会导致操作系统喜欢到另一个线程，通常10微秒。如果等待时间只是几微秒，忙等更高效
+
+## pthread\_mutex
+
+互斥锁的实现原理与信号量非常类似，不是忙等，而是阻塞线程并睡眠，需要上下文切换
+
+互斥锁的常见用法：
+
+```
+pthread_mutexattr_t attr;
+pthread_mutexattr_init(&attr);
+pthread_mutexattr_settype(&attr, PTHREAD_MUTEX_NORMAL);  // 定义锁的属性
+
+pthread_mutex_t mutex;
+pthread_mutex_init(&mutex, &attr) // 创建锁
+
+pthread_mutex_lock(&mutex); // 申请锁
+    // 临界区
+pthread_mutex_unlock(&mutex); // 释放锁
+```
+
+锁的类型有`PTHREAD_MUTEX_NORMAL`、`PTHREAD_MUTEX_ERRORCHECK`、`PTHREAD_MUTEX_RECURSIVE`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
