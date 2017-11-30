@@ -27,6 +27,22 @@ do {
 
 多处理器下原子操作由硬件提供支持
 
+原子操作的伪代码可以表示为
+
+```
+bool test_and_set (bool *target) {
+    bool rv = *target; 
+    *target = TRUE; 
+    return rv;
+}
+```
+
+#### 自旋锁的总结
+
+#### 
+
+
+
 # [关于 @synchronized，这儿比你想知道的还要多](http://yulingtianxia.com/blog/2015/11/01/More-than-you-want-to-know-about-synchronized/)
 
 # 
