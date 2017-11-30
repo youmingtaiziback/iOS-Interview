@@ -142,3 +142,24 @@ wait 方法除了会被 signal 方法唤醒，有时还会被虚假唤醒，所�
 
 信号量可以通过`pthread_cond_broadcast`方法通知所有等待中的消费者
 
+#### NSCondition 的做法
+
+NSCondition封装了互斥锁
+
+```
+// 其实这个函数是通过宏来定义的，展开后就是这样
+- (void) lock {
+  int err = pthread_mutex_lock(&_mutex);
+}
+```
+
+和条件变量
+
+```
+- (void) signal {
+  pthread_cond_signal(&_condition);
+}
+```
+
+
+
