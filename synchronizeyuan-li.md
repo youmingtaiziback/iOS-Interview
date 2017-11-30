@@ -39,9 +39,15 @@ bool test_and_set (bool *target) {
 
 #### 自旋锁的总结
 
-#### 
-
-
+```
+bool lock = false; // 一开始没有锁上，任何线程都可以申请锁
+do {
+    while(test_and_set(&lock); // test_and_set 是一个原子操作
+        Critical section  // 临界区
+    lock = false; // 相当于释放锁，这样别的线程可以进入临界区
+        Reminder section // 不需要锁保护的代码        
+}
+```
 
 # [关于 @synchronized，这儿比你想知道的还要多](http://yulingtianxia.com/blog/2015/11/01/More-than-you-want-to-know-about-synchronized/)
 
