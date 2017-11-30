@@ -100,5 +100,45 @@ pthread_mutex_unlock(&mutex); // 释放锁
 
 它比`pthread_mutex`是因为需要错误提示和方法调用
 
+## NSCondition
 
+NSCondition底层通过条件变量pthread\_cond\_t来实现的，它提供了线程阻塞与信号量机制
+
+#### 如何使用条件变量
+
+它需要与互斥锁配合使用:
+
+```
+void consumer () { // 消费者
+    pthread_mutex_lock(&mutex);
+    while (data == NULL) {
+        pthread_cond_wait(&condition_variable_signal, &mutex); // 等待数据
+    }
+    // --- 有新的数据，以下代码负责处理 ↓↓↓↓↓↓
+    // temp = data;
+    // --- 有新的数据，以上代码负责处理 ↑↑↑↑↑↑
+    pthread_mutex_unlock(&mutex);
+}
+
+void producer () {
+    pthread_mutex_lock(&mutex);
+    // 生产数据
+    pthread_cond_signal(&condition_variable_signal); // 发出信号给消费者，告诉他们有了新的数据
+    pthread_mutex_unlock(&mutex);
+}
+```
+
+使用互斥锁是为了保证`temp = data;`是线程安全的
+
+wait 方法除了会被 signal 方法唤醒，有时还会被虚假唤醒，所以需要这里 while 循环中的判断来做二次确认
+
+#### 为什么要使用条件变量
+
+`pthread_cond_wait` 方法的本质是锁的转移，消费者放弃锁，然后生产者获得锁，同理，`pthread_cond_signal` 则是一个锁从生产者到消费者转移的过程
+
+互斥锁不能保证这一操作的原子性
+
+使用信号量不需要满足先后顺序
+
+信号量可以通过`pthread_cond_broadcast`方法通知所有等待中的消费者
 
