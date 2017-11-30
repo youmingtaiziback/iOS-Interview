@@ -161,5 +161,47 @@ NSCondition封装了互斥锁
 }
 ```
 
+## NSRecursiveLock
+
+通过`pthread_mutex_lock`来实现，类型为`PTHREAD_MUTEX_RECURSIVE`
+
+## NSConditionLock
+
+NSConditionLock 借助 NSCondition 来实现，本质是生产者-消费者模型
+
+初始化：
+
+```
+// 简化版代码
+- (id) initWithCondition: (NSInteger)value {
+    if (nil != (self = [super init])) {
+        _condition = [NSCondition new]
+        _condition_value = value;
+    }
+    return self;
+}
+```
+
+消费者方法：
+
+```
+- (void) lockWhenCondition: (NSInteger)value {
+    [_condition lock];
+    while (value != _condition_value) {
+        [_condition wait];
+    }
+}
+```
+
+生产者方法：
+
+```
+- (void) unlockWithCondition: (NSInteger)value {
+    _condition_value = value;
+    [_condition broadcast];
+    [_condition unlock];
+}
+```
+
 
 
