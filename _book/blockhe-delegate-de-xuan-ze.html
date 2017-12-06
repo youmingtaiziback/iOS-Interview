@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>@synchronize原理 · GitBook</title>
+        <title>Block和Delegate的选择 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="appqi-dong-shi-jian-you-hua.html" />
+    <link rel="next" href="jsbridge.html" />
     
     
-    <link rel="prev" href="httphe-https.html" />
+    <link rel="prev" href="objective-cdan-li-mo-shi-xiang-jie.html" />
     
 
     </head>
@@ -115,7 +115,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="blockhe-delegate-de-xuan-ze.html">
+        <li class="chapter active" data-level="1.3" data-path="blockhe-delegate-de-xuan-ze.html">
             
                 <a href="blockhe-delegate-de-xuan-ze.html">
             
@@ -172,11 +172,69 @@
                 <a href="nsnotificationyu-duo-xian-cheng.html">
             
                     
+                    NSNotification
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="nsnotificationyu-duo-xian-cheng/nsnotificationyu-duo-xian-cheng.html">
+            
+                <a href="nsnotificationyu-duo-xian-cheng/nsnotificationyu-duo-xian-cheng.html">
+            
+                    
                     NSNotification与多线程
             
                 </a>
             
 
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="nsnotificationyu-duo-xian-cheng/nsnotification-xian-cheng-guan-li-yi-ji-zi-dong-zhu-xiao-kai-yuan-fang-an.html">
+            
+                <a href="nsnotificationyu-duo-xian-cheng/nsnotification-xian-cheng-guan-li-yi-ji-zi-dong-zhu-xiao-kai-yuan-fang-an.html">
+            
+                    
+                    NSNotification 线程管理以及自动注销开源方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="nsnotificationyu-duo-xian-cheng/nsnotificationyu-duo-xian-cheng.html">
+            
+                <a href="nsnotificationyu-duo-xian-cheng/nsnotificationyu-duo-xian-cheng.html">
+            
+                    
+                    NSNotification与多线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="nsnotificationyu-duo-xian-cheng/nsnotificationcenterxu-yao-zhu-yi-de-ji-ge-wen-ti.html">
+            
+                <a href="nsnotificationyu-duo-xian-cheng/nsnotificationcenterxu-yao-zhu-yi-de-ji-ge-wen-ti.html">
+            
+                    
+                    NSNotificationCenter需要注意的几个问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -219,16 +277,48 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.11" data-path="synchronizeyuan-li.html">
+        <li class="chapter " data-level="1.11" data-path="synchronizeyuan-li.html">
             
                 <a href="synchronizeyuan-li.html">
             
                     
-                    @synchronize原理
+                    锁
             
                 </a>
             
 
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="synchronizeyuan-li/shen-ru-li-jie-ios-kai-fa-zhong-de-suo.html">
+            
+                <a href="synchronizeyuan-li/shen-ru-li-jie-ios-kai-fa-zhong-de-suo.html">
+            
+                    
+                    深 入理解 iOS 开发中的锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="synchronizeyuan-li/guan-yu-synchronized-ff0c-zhe-er-bi-ni-xiang-zhi-dao-de-huan-yao-duo.html">
+            
+                <a href="synchronizeyuan-li/guan-yu-synchronized-ff0c-zhe-er-bi-ni-xiang-zhi-dao-de-huan-yao-duo.html">
+            
+                    
+                    关 于 @synchronized，这儿比你想知道的还要多
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -284,6 +374,32 @@
             
         </li>
     
+        <li class="chapter " data-level="1.16" data-path="objective-cdui-xiang-zhi-lei-dui-xiang-he-yuan-lei-dui-xiang.html">
+            
+                <a href="objective-cdui-xiang-zhi-lei-dui-xiang-he-yuan-lei-dui-xiang.html">
+            
+                    
+                    Objective-C对象之类对象和元类对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="gcd.html">
+            
+                <a href="gcd.html">
+            
+                    
+                    GCD
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
 
@@ -314,7 +430,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >@synchronize原理</a>
+        <a href="." >Block和Delegate的选择</a>
     </h1>
 </div>
 
@@ -329,12 +445,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="synchronize&#x539F;&#x7406;">@synchronize&#x539F;&#x7406;</h1>
-<ul>
-<li>&#x4F20;&#x5165;&#x7684;&#x5BF9;&#x8C61;&#x662F;&#x5426;&#x88AB;synchronize&#x6301;&#x6709;</li>
-<li>&#x5728;synchronize&#x4E2D;&#x4F20;nil&#x4F1A;&#x4E0D;&#x4F1A;&#x6709;&#x4EC0;&#x4E48;&#x95EE;&#x9898;</li>
-<li>&#x4F20;&#x5165;synchronize&#x7684;&#x5BF9;&#x8C61;&#x88AB;&#x5176;&#x4ED6;&#x7EBF;&#x7A0B;&#x91CA;&#x653E;&#x4F1A;&#x6709;&#x4EC0;&#x4E48;&#x7ED3;&#x679C;</li>
-</ul>
+                                <h1 id="block&#x548C;delegate&#x7684;&#x9009;&#x62E9;"><a href="http://www.jianshu.com/p/f8d5defddb09" target="_blank">Block&#x548C;Delegate&#x7684;&#x9009;&#x62E9;</a></h1>
 
                                 
                                 </section>
@@ -362,12 +473,12 @@
 
             
                 
-                <a href="httphe-https.html" class="navigation navigation-prev " aria-label="Previous page: HTTP和HTTPS">
+                <a href="objective-cdan-li-mo-shi-xiang-jie.html" class="navigation navigation-prev " aria-label="Previous page: Objective-c单例模式详解">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="appqi-dong-shi-jian-you-hua.html" class="navigation navigation-next " aria-label="Next page: App启动时间优化">
+                <a href="jsbridge.html" class="navigation navigation-next " aria-label="Next page: JSBridge">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -378,7 +489,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"@synchronize原理","level":"1.11","depth":1,"next":{"title":"App启动时间优化","level":"1.12","depth":1,"path":"appqi-dong-shi-jian-you-hua.md","ref":"appqi-dong-shi-jian-you-hua.md","articles":[]},"previous":{"title":"HTTP和HTTPS","level":"1.10","depth":1,"path":"httphe-https.md","ref":"httphe-https.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"synchronizeyuan-li.md","mtime":"2017-11-14T14:04:52.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-11-24T11:53:34.957Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Block和Delegate的选择","level":"1.3","depth":1,"next":{"title":"JSBridge","level":"1.4","depth":1,"path":"jsbridge.md","ref":"jsbridge.md","articles":[]},"previous":{"title":"Objective-c单例模式详解","level":"1.2","depth":1,"path":"objective-cdan-li-mo-shi-xiang-jie.md","ref":"objective-cdan-li-mo-shi-xiang-jie.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"blockhe-delegate-de-xuan-ze.md","mtime":"2017-11-01T09:52:36.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-12-06T04:09:48.001Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
