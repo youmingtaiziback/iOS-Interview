@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Introduction · GitBook</title>
+        <title>NSNotification · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,8 +57,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="objective-cdan-li-mo-shi-xiang-jie.html" />
+    <link rel="next" href="nsnotificationyu-duo-xian-cheng/nsnotificationyu-duo-xian-cheng.html" />
     
+    
+    <link rel="prev" href="runtime.html" />
     
 
     </head>
@@ -87,7 +89,7 @@
         
         
     
-        <li class="chapter active" data-level="1.1" data-path="./">
+        <li class="chapter " data-level="1.1" data-path="./">
             
                 <a href="./">
             
@@ -165,7 +167,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7" data-path="nsnotificationyu-duo-xian-cheng.html">
+        <li class="chapter active" data-level="1.7" data-path="nsnotificationyu-duo-xian-cheng.html">
             
                 <a href="nsnotificationyu-duo-xian-cheng.html">
             
@@ -428,7 +430,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Introduction</a>
+        <a href="." >NSNotification</a>
     </h1>
 </div>
 
@@ -443,24 +445,12 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="summary">Summary</h1>
+                                <h1 id="nsnotification&#x4E0E;&#x591A;&#x7EBF;&#x7A0B;">NSNotification&#x4E0E;&#x591A;&#x7EBF;&#x7A0B;</h1>
 <ul>
-<li><a href="./">Introduction</a></li>
-<li><a href="objective-cdan-li-mo-shi-xiang-jie.html">Objective-c&#x5355;&#x4F8B;&#x6A21;&#x5F0F;&#x8BE6;&#x89E3;</a></li>
-<li><a href="blockhe-delegate-de-xuan-ze.html">Block&#x548C;Delegate&#x7684;&#x9009;&#x62E9;</a></li>
-<li><a href="jsbridge.html">JSBridge</a></li>
-<li><a href="kvoyuan-li.html">KVO&#x539F;&#x7406;</a></li>
-<li><a href="runtime.html">Runtime</a></li>
-<li><a href="nsnotificationyu-duo-xian-cheng.html">NSNotification&#x4E0E;&#x591A;&#x7EBF;&#x7A0B;</a></li>
-<li><a href="block.html">Block</a></li>
-<li><a href="+load548c+-initialize.html">+load&#x548C;+initializer</a></li>
-<li><a href="httphe-https.html">HTTP&#x548C;HTTPS</a></li>
-<li><a href="synchronizeyuan-li.html">&#x9501;</a></li>
-<li><a href="appqi-dong-shi-jian-you-hua.html">App&#x542F;&#x52A8;&#x65F6;&#x95F4;&#x4F18;&#x5316;</a></li>
-<li><a href="afnetworking.html">AFNetworking</a></li>
-<li><a href="wu-fen-zhong-du-dong-uml-lei-tu.html">&#x4E94;&#x5206;&#x949F;&#x8BFB;&#x61C2;UML&#x7C7B;&#x56FE;</a></li>
-<li><a href="http-fangfa-ff1a-get-dui-bi-post.html">HTTP &#x65B9;&#x6CD5;&#xFF1A;GET &#x5BF9;&#x6BD4; POST</a></li>
-<li><a href="objective-cdui-xiang-zhi-lei-dui-xiang-he-yuan-lei-dui-xiang.html">Objective-C&#x5BF9;&#x8C61;&#x4E4B;&#x7C7B;&#x5BF9;&#x8C61;&#x548C;&#x5143;&#x7C7B;&#x5BF9;&#x8C61;</a></li>
+<li><a href="http://www.cocoachina.com/ios/20150316/11335.html" target="_blank">Notification&#x4E0E;&#x591A;&#x7EBF;&#x7A0B;</a></li>
+<li><a href="https://segmentfault.com/a/1190000005889055" target="_blank">NSNotification &#x7EBF;&#x7A0B;&#x7BA1;&#x7406;&#x4EE5;&#x53CA;&#x81EA;&#x52A8;&#x6CE8;&#x9500;&#x5F00;&#x6E90;&#x65B9;&#x6848;</a></li>
+<li><a href="http://blog.csdn.net/khlljm/article/details/44264627" target="_blank">NSNotification&#x4E0E;&#x591A;&#x7EBF;&#x7A0B;</a></li>
+<li><a href="https://www.cnblogs.com/agger0207/p/4418392.html" target="_blank">NSNotificationCenter&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x51E0;&#x4E2A;&#x95EE;&#x9898;</a></li>
 </ul>
 
                                 
@@ -489,8 +479,12 @@
 
             
                 
+                <a href="runtime.html" class="navigation navigation-prev " aria-label="Previous page: Runtime">
+                    <i class="fa fa-angle-left"></i>
+                </a>
                 
-                <a href="objective-cdan-li-mo-shi-xiang-jie.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Objective-c单例模式详解">
+                
+                <a href="nsnotificationyu-duo-xian-cheng/nsnotificationyu-duo-xian-cheng.html" class="navigation navigation-next " aria-label="Next page: NSNotification与多线程">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -501,7 +495,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"Objective-c单例模式详解","level":"1.2","depth":1,"path":"objective-cdan-li-mo-shi-xiang-jie.md","ref":"objective-cdan-li-mo-shi-xiang-jie.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2017-11-27T14:04:57.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-12-06T04:11:01.591Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"NSNotification","level":"1.7","depth":1,"next":{"title":"NSNotification与多线程","level":"1.7.1","depth":2,"path":"nsnotificationyu-duo-xian-cheng/nsnotificationyu-duo-xian-cheng.md","ref":"nsnotificationyu-duo-xian-cheng/nsnotificationyu-duo-xian-cheng.md","articles":[]},"previous":{"title":"Runtime","level":"1.6","depth":1,"path":"runtime.md","ref":"runtime.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"nsnotificationyu-duo-xian-cheng.md","mtime":"2017-11-12T06:38:33.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-12-06T04:11:01.591Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
