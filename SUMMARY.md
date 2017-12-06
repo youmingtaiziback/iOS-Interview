@@ -7,7 +7,6 @@
 * [KVO原理](kvoyuan-li.md)
 * [Runtime](runtime.md)
 * [NSNotification](nsnotificationyu-duo-xian-cheng.md)
-  * [NSNotification与多线程](nsnotificationyu-duo-xian-cheng/nsnotificationyu-duo-xian-cheng.md)
   * [NSNotification 线程管理以及自动注销开源方案](nsnotificationyu-duo-xian-cheng/nsnotification-xian-cheng-guan-li-yi-ji-zi-dong-zhu-xiao-kai-yuan-fang-an.md)
   * [NSNotification与多线程](nsnotificationyu-duo-xian-cheng/nsnotificationyu-duo-xian-cheng.md)
   * [NSNotificationCenter需要注意的几个问题](nsnotificationyu-duo-xian-cheng/nsnotificationcenterxu-yao-zhu-yi-de-ji-ge-wen-ti.md)
