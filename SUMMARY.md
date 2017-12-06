@@ -8,9 +8,9 @@
 * [Runtime](runtime.md)
 * [NSNotification](nsnotificationyu-duo-xian-cheng.md)
   * [NSNotification与多线程](nsnotificationyu-duo-xian-cheng/nsnotificationyu-duo-xian-cheng.md)
-  * NSNotification 线程管理以及自动注销开源方案
-  * NSNotification与多线程
-  * NSNotificationCenter需要注意的几个问题
+  * [NSNotification 线程管理以及自动注销开源方案](nsnotificationyu-duo-xian-cheng/nsnotification-xian-cheng-guan-li-yi-ji-zi-dong-zhu-xiao-kai-yuan-fang-an.md)
+  * [NSNotification与多线程](nsnotificationyu-duo-xian-cheng/nsnotificationyu-duo-xian-cheng.md)
+  * [NSNotificationCenter需要注意的几个问题](nsnotificationyu-duo-xian-cheng/nsnotificationcenterxu-yao-zhu-yi-de-ji-ge-wen-ti.md)
 * [Block](block.md)
 * [+load和+initializer](+load548c+-initialize.md)
 * [HTTP和HTTPS](httphe-https.md)
