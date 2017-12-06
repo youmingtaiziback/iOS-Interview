@@ -1,4 +1,4 @@
-# NSNotification与多线程
+# Notification与多线程
 
 # 
 
