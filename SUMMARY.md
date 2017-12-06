@@ -19,8 +19,8 @@
   * [关 于 @synchronized，这儿比你想知道的还要多](synchronizeyuan-li/guan-yu-synchronized-ff0c-zhe-er-bi-ni-xiang-zhi-dao-de-huan-yao-duo.md)
 * [App启动时间优化](appqi-dong-shi-jian-you-hua.md)
 * [AFNetworking](afnetworking.md)
-* [五分钟读懂UML类图](wu-fen-zhong-du-dong-uml-lei-tu.md)
 * [HTTP 方法：GET 对比 POST](http-fangfa-ff1a-get-dui-bi-post.md)
 * [Objective-C对象之类对象和元类对象](objective-cdui-xiang-zhi-lei-dui-xiang-he-yuan-lei-dui-xiang.md)
 * [GCD](gcd.md)
+* [五分钟读懂UML类图](wu-fen-zhong-du-dong-uml-lei-tu.md)
 
