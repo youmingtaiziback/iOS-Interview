@@ -118,7 +118,7 @@ main\(\)被调用后，在`- (BOOL)Application:(UIApplication *)Application didF
 * 每次用NSLog方式打印会隐式的创建一个Calendar，因此需要删减启动时各业务方打的log，或者仅仅针对内测版输出log
 * 梳理应用启动时发送的所有网络请求，是否可以统一在异步线程请求
 
-# [阿里数据iOS端启动速度优化的一些经验](http://www.jianshu.com/p/f29b59f4c2b9)
+# 
 
 
 
