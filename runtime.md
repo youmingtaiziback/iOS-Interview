@@ -1,8 +1,13 @@
-# Runtime
+# runtime可以做哪些事情
 
-* [Objective-C Runtime](http://tech.glowing.com/cn/objective-c-runtime/)
-* [Method Swizzling 和 AOP 实践](http://tech.glowing.com/cn/method-swizzling-aop/)
-* [Objective-C Category 的实现原理](https://blog.leichunfeng.com/blog/2015/05/18/objective-c-category-implementation-principle/)
+* method swizzle
+* category
+* 注册类
+* 给类添加方法、变量
+* 获取类的方法、变量
+* 关联对象
+* 消息转发
+* KVO
 
 
 
