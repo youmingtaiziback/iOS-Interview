@@ -4,7 +4,7 @@
 * [Objective-c单例模式详解](objective-cdan-li-mo-shi-xiang-jie.md)
 * [Block和Delegate的选择](blockhe-delegate-de-xuan-ze.md)
 * [JSBridge](jsbridge.md)
-* [KVO原理](kvoyuan-li.md)
+* [KVO](kvoyuan-li.md)
   * [探究KVO的底层实现原理](kvoyuan-li/tan-jiu-kvo-de-di-ceng-shi-xian-yuan-li.md)
   * [iOS开发 -- KVO的实现原理与具体应用](kvoyuan-li/ioskai-fa-kvo-de-shi-xian-yuan-li-yu-ju-ti-ying-yong.md)
   * [如何自己动手实现 KVO](kvoyuan-li/ru-he-zi-ji-dong-shou-shi-xian-kvo.md)
