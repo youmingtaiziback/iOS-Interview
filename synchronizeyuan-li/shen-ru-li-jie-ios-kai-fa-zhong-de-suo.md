@@ -53,7 +53,7 @@ do {
 
 ## 信号量
 
-信号量最重会调用`sem_wait`函数
+信号量最终会调用`sem_wait`函数
 
 ```
 int sem_wait (sem_t *sem) {
