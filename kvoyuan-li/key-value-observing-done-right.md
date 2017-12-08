@@ -10,3 +10,9 @@ NSNotificationCenter注册一个监听者时可以传递自定义selector，这�
 
 context只能用来标识父类对本次的通知是否感兴趣，别无它用
 
+#### `-removeObserver:forKeyPath:`没有携带足够的参数
+
+假如子类和父类都监听了一些属性，那么在移除监听时，没办法指定移除子类的或者是父类的
+
+
+
