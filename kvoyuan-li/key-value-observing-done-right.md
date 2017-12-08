@@ -8,7 +8,5 @@ NSNotificationCenter注册一个监听者时可以传递自定义selector，这�
 
 #### context参数作用不大
 
-
-
-
+context只能用来标识父类对本次的通知是否感兴趣，别无它用
 
