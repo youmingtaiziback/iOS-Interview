@@ -9,6 +9,7 @@
 * [KVO](kvoyuan-li.md)
   * [iOS开发 -- KVO的实现原理与具体应用](kvoyuan-li/ioskai-fa-kvo-de-shi-xian-yuan-li-yu-ju-ti-ying-yong.md)
   * [如何自己动手实现 KVO](kvoyuan-li/ru-he-zi-ji-dong-shou-shi-xian-kvo.md)
+  * [Key-Value Observing Done Right](kvoyuan-li/key-value-observing-done-right.md)
 * [Runtime](runtime.md)
   * [Objective-C Runtime](runtime/objective-c-runtime.md)
   * [Method Swizzling 和 AOP 实践](runtime/method-swizzling-he-aop-shi-jian.md)
