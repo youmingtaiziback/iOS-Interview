@@ -13,6 +13,7 @@
   * [Objective-C Runtime](runtime/objective-c-runtime.md)
   * [Method Swizzling 和 AOP 实践](runtime/method-swizzling-he-aop-shi-jian.md)
   * [Objective-C Category 的实现原理](runtime/objective-c-category-de-shi-xian-yuan-li.md)
+  * [iOS开发 -- Runtime 的几个小例子](runtime/ioskai-fa-runtime-de-ji-ge-xiao-li-zi.md)
 * [NSNotification](nsnotificationyu-duo-xian-cheng.md)
   * [NSNotification 线程管理以及自动注销开源方案](nsnotificationyu-duo-xian-cheng/nsnotification-xian-cheng-guan-li-yi-ji-zi-dong-zhu-xiao-kai-yuan-fang-an.md)
   * [Notification与多线程](nsnotificationyu-duo-xian-cheng/notificationyu-duo-xian-cheng.md)
