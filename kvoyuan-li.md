@@ -1,8 +1,14 @@
-# KVO原理
+# KVO缺陷
 
-* [探究KVO的底层实现原理](http://www.jianshu.com/p/829864680648)
-* [iOS开发 -- KVO的实现原理与具体应用](http://www.jianshu.com/p/e59bb8f59302)
-* [如何自己动手实现 KVO](http://tech.glowing.com/cn/implement-kvo/)
+## 监听时`-addObserver:forKeyPath:options:context:`
+
+不能传递自定义的selector或者block
+
+context参数只能用来区分父类或者子类感兴趣的监听，作用受限
+
+## 回调时`-observeValueForKeyPath:ofObject:change:context:`
+
+## 移除时`-removeObserver:forKeyPath:`
 
 
 
