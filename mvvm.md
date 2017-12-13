@@ -6,5 +6,7 @@
 
 [被误解的 MVC 和被神化的 MVVM](http://www.jianshu.com/p/79591e226d8c)
 
+[框架篇—MVC、MVP、MVCS、MVVM、VIPER使用关系总结](http://www.jianshu.com/p/b42a26623aeb)
+
 
 
