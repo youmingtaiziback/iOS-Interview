@@ -4,5 +4,7 @@
 
 [iOS 关于MVC和MVVM设计模式的那些事](http://www.jianshu.com/p/caaa173071f3)
 
+[被误解的 MVC 和被神化的 MVVM](http://www.jianshu.com/p/79591e226d8c)
+
 
 
