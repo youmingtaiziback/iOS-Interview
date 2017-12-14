@@ -37,14 +37,14 @@
   * [阿里数据iOS端启动速度优化的一些经验](appqi-dong-shi-jian-you-hua/a-li-shu-ju-ios-duan-qi-dong-su-du-you-hua-de-yi-xie-jing-yan.md)
 * [AFNetworking](afnetworking.md)
   * [AFNetworking源码分析](afnetworking/afnetworkingyuan-ma-fen-xi.md)
-* [HTTP 方法：GET 对比 POST](http-fangfa-ff1a-get-dui-bi-post.md)
-* [Objective-C对象之类对象和元类对象](objective-cdui-xiang-zhi-lei-dui-xiang-he-yuan-lei-dui-xiang.md)
-* [GCD](gcd.md)
-* [五分钟读懂UML类图](wu-fen-zhong-du-dong-uml-lei-tu.md)
 * [MVVM](mvvm.md)
   * [iOS 关于MVC和MVVM设计模式的那些事](mvvm/ios-guan-yu-mvc-he-mvvm-she-ji-mo-shi-de-na-xie-shi.md)
   * [\[iOS\]MVVM-框架介绍](mvvm/iosmvvmkuang-jia-jie-shao.md)
 * [App数据统计与上传](appshu-ju-tong-ji-yu-shang-chuan.md)
   * iOS无埋点数据SDK的整体设计与技术实现
   * [美团点评前端无痕埋点实践](appshu-ju-tong-ji-yu-shang-chuan/mei-tuan-dian-ping-qian-duan-wu-hen-mai-dian-shi-jian.md)
+* [HTTP 方法：GET 对比 POST](http-fangfa-ff1a-get-dui-bi-post.md)
+* [Objective-C对象之类对象和元类对象](objective-cdui-xiang-zhi-lei-dui-xiang-he-yuan-lei-dui-xiang.md)
+* [GCD](gcd.md)
+* [五分钟读懂UML类图](wu-fen-zhong-du-dong-uml-lei-tu.md)
 
