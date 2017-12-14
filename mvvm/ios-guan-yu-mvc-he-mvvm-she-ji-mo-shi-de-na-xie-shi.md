@@ -35,6 +35,13 @@
 * viewModel之间可以有依赖
 * viewModel避免过于臃肿，否则重蹈Controller的覆辙，变得难以维护
 
+#### MVVM 的优势
+
+* 低耦合：View 可以独立于Model变化和修改，一个 viewModel 可以绑定到不同的 View 上
+* 可重用性：可以把一些视图逻辑放在一个 viewModel里面，让很多 view 重用这段视图逻辑
+* 独立开发：开发人员可以专注于业务逻辑和数据的开发 viewModel，设计人员可以专注于页面设计
+* 可测试：通常界面是比较难于测试的，而 MVVM 模式可以针对 viewModel来进行测试
+
 
 
 
