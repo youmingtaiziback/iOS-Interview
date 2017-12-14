@@ -12,5 +12,7 @@
 
 * 网络操作最重只能放在Controller里面，加重了Controller的臃肿程度
 
+* 测试性较差
+
 
 
