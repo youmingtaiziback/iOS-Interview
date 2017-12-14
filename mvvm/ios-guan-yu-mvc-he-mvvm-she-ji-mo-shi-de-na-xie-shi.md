@@ -14,5 +14,9 @@
 
 * 测试性较差
 
+## MVVM（Model View View-Mode）
+
+MVVM衍生于MVC，促进了UI代码与业务逻辑的分离
+
 
 
