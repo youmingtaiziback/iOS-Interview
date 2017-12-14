@@ -45,6 +45,7 @@
   * [美团点评前端无痕埋点实践](appshu-ju-tong-ji-yu-shang-chuan/mei-tuan-dian-ping-qian-duan-wu-hen-mai-dian-shi-jian.md)
 * [performSelector](shi-yong-performselector-fang-fa-diao-yong-duo-ge-can-shu.md)
   * [消息处理之performSelector](shi-yong-performselector-fang-fa-diao-yong-duo-ge-can-shu/xiao-xi-chu-li-zhi-performselector.md)
+  * [使用performSelector方法调用多个参数](shi-yong-performselector-fang-fa-diao-yong-duo-ge-can-shu/shi-yong-performselector-fang-fa-diao-yong-duo-ge-can-shu.md)
 * [HTTP 方法：GET 对比 POST](http-fangfa-ff1a-get-dui-bi-post.md)
 * [Objective-C对象之类对象和元类对象](objective-cdui-xiang-zhi-lei-dui-xiang-he-yuan-lei-dui-xiang.md)
 * [GCD](gcd.md)
