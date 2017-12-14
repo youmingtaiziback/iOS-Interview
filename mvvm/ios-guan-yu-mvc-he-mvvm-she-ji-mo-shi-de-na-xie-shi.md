@@ -16,11 +16,26 @@
 
 ## MVVM（Model View View-Mode）
 
+#### MVVM概念
+
 * MVVM衍生于MVC，促进了UI代码与业务逻辑的分离
 * 正式规范了视图和控制器紧耦合的性质
 * 引入新的组件
 
 ![](/assets/import1.png)
+
+#### MVVM 的使用建议
+
+* MVVM 可以兼容你当下使用的MVC架构
+* MVVM 增加你的应用的可测试性
+* MVVM 配合一个绑定机制效果最好（PS：ReactiveCocoa你值得拥有）
+* viewController 尽量不涉及业务逻辑，让 viewModel 去做这些事情
+* viewController 只是一个中间人，接收 view 的事件、调用  viewModel 的方法、响应 viewModel 的变化
+* viewModel 绝对不能包含视图 view（UIKit.h），不然就跟 view 产生了耦合，不方便复用和测试
+* viewModel之间可以有依赖
+* viewModel避免过于臃肿，否则重蹈Controller的覆辙，变得难以维护
+
+
 
 
 
