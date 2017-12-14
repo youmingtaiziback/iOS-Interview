@@ -16,7 +16,9 @@
 
 ## MVVM（Model View View-Mode）
 
-MVVM衍生于MVC，促进了UI代码与业务逻辑的分离
+* MVVM衍生于MVC，促进了UI代码与业务逻辑的分离
+* 正式规范了视图和控制器紧耦合的性质
+* 引入新的组件
 
 
 
