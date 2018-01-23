@@ -47,3 +47,9 @@
 
 hook掉UIView、CALayer的setNeedsLayout、setNeedsDisplay、setNeedsDisplayInRect:三个方法
 
+#### FPS监控
+
+
+
+
+
