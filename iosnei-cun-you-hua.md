@@ -45,6 +45,8 @@
 
 ## UI数据源监控 {#UI数据源监控}
 
+我们只需hook了UIDataSource的alloc、NSMutableArray的add等方法，当调用NSMutableArray的add方法时，去遍历所有UIDataSource对象，通过class\_copyIvarList、valueForKey函数把所有的成员变量都找出来看看是否为当前的NSMutableArray，通过NSAssert确保当前在主线程，否则在debug模式下会crash提醒开发者修改
+
 ## UI主线程监控 {#UI主线程监控}
 
 #### 防止子线程访问UI
