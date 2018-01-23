@@ -64,6 +64,9 @@ hook掉UIView、CALayer的setNeedsLayout、setNeedsDisplay、setNeedsDisplayInRe
 如何捕捉所有的Assert
 
 * NSAssertionHandler线程相关
+* 重写NSAssert宏，可能会引起未知问题
+
+* 自己包装NSAssert
 
 
 
