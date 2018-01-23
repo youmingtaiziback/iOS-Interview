@@ -66,7 +66,7 @@ hook掉UIView、CALayer的setNeedsLayout、setNeedsDisplay、setNeedsDisplayInRe
 * NSAssertionHandler线程相关
 * 重写NSAssert宏，可能会引起未知问题
 
-* 自己包装NSAssert
+* 自己包装NSAssert，使用plcrashreporter这个库来获取堆栈的
 
 
 
