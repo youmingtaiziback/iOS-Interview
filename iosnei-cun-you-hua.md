@@ -41,6 +41,8 @@
 
 ## 数据层的性能监控 {#数据层的性能监控}
 
+数据层框架是[GYDataCenter](https://wereadteam.github.io/2016/07/06/GYDataCenter/)
+
 ## UI数据源监控 {#UI数据源监控}
 
 ## UI主线程监控 {#UI主线程监控}
