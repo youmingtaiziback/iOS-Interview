@@ -39,6 +39,18 @@
 
 * cache 的释放与重建，避免占用空间无限扩大，同时释放的粒度也要依实际需求而定
 
+#### 使用正确的API {#5-使用正确的API}
+
+* imageNamed:
+
+* NSDateFormatter
+
+* \(NSDate \*\)dateFromString:\(NSString \)string
+
+* NSLog\(\)
+
+* stat代替NSFileManager
+
 ## 如何预防性能问题 {#如何预防性能问题}
 
 #### 内存泄露检测工具 {#1-内存泄露检测工具}
