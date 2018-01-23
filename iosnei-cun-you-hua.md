@@ -43,7 +43,7 @@
 
 ## UI主线程监控 {#UI主线程监控}
 
-#### 
+#### 防止子线程访问UI
 
 hook掉UIView、CALayer的setNeedsLayout、setNeedsDisplay、setNeedsDisplayInRect:三个方法
 
