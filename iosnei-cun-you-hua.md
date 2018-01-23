@@ -53,5 +53,7 @@ hook掉UIView、CALayer的setNeedsLayout、setNeedsDisplay、setNeedsDisplayInRe
 
 #### 线上用户监控
 
+使用RDM sdk来监控，原理是通过RunLoop的几个Observer来确定主线程是否卡住了
+
 
 
