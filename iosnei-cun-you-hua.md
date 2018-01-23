@@ -68,5 +68,7 @@ hook掉UIView、CALayer的setNeedsLayout、setNeedsDisplay、setNeedsDisplayInRe
 
 * 自己包装NSAssert，使用plcrashreporter这个库来获取堆栈的
 
+## 总结 {#总结}
+
 
 
