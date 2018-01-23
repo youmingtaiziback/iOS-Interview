@@ -41,5 +41,9 @@
 
 ## UI数据源监控 {#UI数据源监控}
 
+## UI主线程监控 {#UI主线程监控}
+
+hook掉UIView、CALayer的setNeedsLayout、setNeedsDisplay、setNeedsDisplayInRect:三个方法
+
 
 
