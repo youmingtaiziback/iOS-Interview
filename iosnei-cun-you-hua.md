@@ -61,5 +61,9 @@ hook掉UIView、CALayer的setNeedsLayout、setNeedsDisplay、setNeedsDisplayInRe
 
 发布环境下Assert是默认不生效的，需要使其生效
 
+如何捕捉所有的Assert
+
+* NSAssertionHandler线程相关
+
 
 
