@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+* [iOS内存优化](iosnei-cun-you-hua.md)
 * [Objective-c单例模式详解](objective-cdan-li-mo-shi-xiang-jie.md)
 * [Block和Delegate的选择](blockhe-delegate-de-xuan-ze.md)
 * [JSBridge](jsbridge.md)
@@ -49,5 +50,5 @@
 * [HTTP 方法：GET 对比 POST](http-fangfa-ff1a-get-dui-bi-post.md)
 * [Objective-C对象之类对象和元类对象](objective-cdui-xiang-zhi-lei-dui-xiang-he-yuan-lei-dui-xiang.md)
 * [GCD](gcd.md)
-* [五分钟读懂UML类图](wu-fen-zhong-du-dong-uml-lei-tu.md)
+* iOS内存优化
 
